@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Task Board Application
 
-## Getting Started
+This is a **Task Management Board** built using **React (Next.js)** with Firebase as the backend. The project allows users to **create, manage, and complete tasks** with a modern UI and **MetaMask** authentication for Web3 integration.
 
-First, run the development server:
+## 🚀 Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+The application is deployed on **Vercel**. You can access it here:\
+🔗 **[Task Board Application](https://taskboard-application-dmju8ktv5-shafes-projects.vercel.app)**
+
+---
+
+## 📹 Demo Video
+
+A walkthrough video explaining the project, code, and functionality is available on **Loom/YouTube**.
+🔗 **[Demo Video Link](#)** (Replace with actual link once recorded)
+
+---
+
+## 🛠️ Features
+
+- **Task Management**: Add, update, delete tasks
+- **Due Dates & Status Labels**: Organize tasks better
+- **MetaMask Authentication**: Secure login using Web3 wallet
+- **Persistent Profile Pictures**: Stored and fetched uniquely for each user
+- **Modern UI with Tailwind CSS**: Responsive and sleek design
+
+---
+
+## 🏗️ Setup & Installation
+
+### **Prerequisites**
+
+Ensure you have the following installed before proceeding:
+
+- **Node.js** (>= 16.x) - [Download here](https://nodejs.org/)
+- **Git** - [Download here](https://git-scm.com/)
+- **MetaMask Extension** - [Install Here](https://metamask.io/)
+- **Firebase Account** - [Set Up Here](https://firebase.google.com/)
+
+### **1️⃣ Clone the Repository**
+
+```sh
+git clone https://github.com/Shafekhan/reactjs-sample-0225.git
+cd reactjs-sample-0225
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **2️⃣ Install Dependencies**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```sh
+npm install  # or yarn install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **3️⃣ Setup Firebase**
 
-## Learn More
+1. Go to **[Firebase Console](https://console.firebase.google.com/)**.
+2. Create a project and **enable Firestore**.
+3. Copy your **Firebase Config** and create a `.env.local` file:
 
-To learn more about Next.js, take a look at the following resources:
+```sh
+NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_auth_domain
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### **4️⃣ Run the Project Locally**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```sh
+npm run dev  # or yarn dev
+```
 
-## Deploy on Vercel
+Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔗 MetaMask Integration
+
+This application **requires MetaMask** to authenticate users and connect their wallets.
+
+### **Steps to Connect MetaMask**
+
+1. Install the **MetaMask** browser extension from [here](https://metamask.io/).
+2. Open the app and **click on "Login with MetaMask"**.
+3. Approve the request to **connect your wallet**.
+4. You're all set! Your wallet address will be displayed.
+
+If you face issues, ensure **MetaMask is installed and unlocked**.
+
+---
+
+## 🚀 Deployment
+
+The app is deployed on **Vercel**. To deploy manually:
+
+1. **Sign in to Vercel** and create a new project.
+2. Connect to your **GitHub repo**.
+3. Set environment variables (from `.env.local`).
+4. Click **Deploy**.
+
+For more details, visit [Next.js Deployment Guide](https://nextjs.org/docs/deployment).
+
+---
+
+🚀 All the best!
+
