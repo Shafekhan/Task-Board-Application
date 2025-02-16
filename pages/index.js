@@ -13,12 +13,10 @@ export default function Home() {
     }
 
     try {
-      // Connect to MetaMask
+      // Connecting to MetaMask
       const provider = new ethers.BrowserProvider(window.ethereum);
       const signer = await provider.getSigner();
       const walletAddress = await signer.getAddress();
-
-      // Store wallet address in Firestore if it's a new user
       const userRef = doc(collection(db, "users"), walletAddress);
       const userSnapshot = await getDoc(userRef);
 

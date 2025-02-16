@@ -16,8 +16,6 @@ export default function Dashboard() {
           const provider = new ethers.BrowserProvider(window.ethereum);
           const signer = await provider.getSigner();
           setWalletAddress(await signer.getAddress());
-
-          // Listen for account changes
           window.ethereum.on("accountsChanged", (accounts) => {
             if (accounts.length > 0) {
               setWalletAddress(accounts[0]);
@@ -45,13 +43,13 @@ export default function Dashboard() {
     return () => unsub();
   }, [walletAddress]);
 
-  // 🔹 Fetch Random Profile Picture
+  // Fetching Random Profile Picture
   useEffect(() => {
-    const randomId = Math.floor(Math.random() * 1000); // Generate a random number between 0-999
+    const randomId = Math.floor(Math.random() * 1000); 
     fetch(`https://picsum.photos/id/${randomId}/info`)
       .then((res) => res.json())
       .then((data) => setProfilePic(data.download_url))
-      .catch(() => setProfilePic("https://picsum.photos/60")); // Fallback if API fails
+      .catch(() => setProfilePic("https://picsum.photos/60"));
   }, []);
 
   const connectWallet = async () => {

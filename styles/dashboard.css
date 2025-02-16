@@ -57,7 +57,7 @@
 }
 
 
-/* Dashboard container - Glassmorphism + Neon Glow */
+/* Dashboard container */
 .dashboard-container {
   max-width: 600px;
   margin: 20px auto;
@@ -87,14 +87,14 @@
   transform: scale(1.1);
 }
 
-/* Input Field - Glow Effect */
+/* Input Field */
 .task-input {
   width: 100%;
-  padding: 10px 12px; /* Adjusted padding for proper text alignment */
+  padding: 10px 12px;
   border: none;
   border-radius: 10px;
   font-size: 16px;
-  line-height: 1.5; /* Ensures text is vertically centered */
+  line-height: 1.5; 
   outline: none;
   background: rgba(255, 255, 255, 0.2);
   color: #080808;
@@ -105,7 +105,7 @@
 
 .task-input::placeholder {
   color: #4d4a4a;
-  font-size: 14px; /* Ensures placeholder text is properly aligned */
+  font-size: 14px;
 }
 
 .task-input:focus {
@@ -113,7 +113,7 @@
 }
 
 
-/* Buttons - Neon Glow + Smooth Hover */
+/* Buttons */
 .add-btn,
 .delete-btn,
 .complete-btn {
@@ -126,7 +126,7 @@
   letter-spacing: 1px;
 }
 
-/* Add Task Button - Neon Glow & Smooth Hover */
+/* Add Task Button */
 .add-task-button {
   padding: 14px 28px;
   font-size: 1.2rem;

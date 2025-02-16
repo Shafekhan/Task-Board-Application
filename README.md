@@ -12,7 +12,7 @@ The application is deployed on **Vercel**. You can access it here:\
 ## 📹 Demo Video
 
 A walkthrough video explaining the project, code, and functionality is available on **Loom/YouTube**.
-🔗 **[Demo Video Link](#)** (Replace with actual link once recorded)
+🔗 **[Demo Video Link](https://youtu.be/45rSEEWvoks)**
 
 ---
 
@@ -40,14 +40,13 @@ Ensure you have the following installed before proceeding:
 ### **1️⃣ Clone the Repository**
 
 ```sh
-git clone https://github.com/Shafekhan/reactjs-sample-0225.git
-cd reactjs-sample-0225
+git clone https://github.com/Shafekhan/Task-Board-Application
 ```
 
 ### **2️⃣ Install Dependencies**
 
 ```sh
-npm install  # or yarn install
+npm install
 ```
 
 ### **3️⃣ Setup Firebase**
@@ -68,7 +67,7 @@ NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
 ### **4️⃣ Run the Project Locally**
 
 ```sh
-npm run dev  # or yarn dev
+npm run dev
 ```
 
 Open **[http://localhost:3000](http://localhost:3000)** in your browser.

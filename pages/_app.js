@@ -1,4 +1,4 @@
-import '../styles/dashboard.css'; // ✅ Import global CSS here
+import '../styles/dashboard.css';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
